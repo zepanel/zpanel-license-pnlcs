@@ -1,0 +1,16 @@
+{
+  "name": "ZPanelLicense",
+  "displayName": "zPanel License Provisioning Module",
+  "type": "server",
+  "version": "1.0.0",
+  "author": "zPanel Core Team",
+  "description": "PNLCS zPanel Partner API v1 üzerinden otomatik lisans üretimi, IP yetkilendirme ve lisans taşıma.",
+  "features": [
+    "issue_license",
+    "verify_license",
+    "reissue_ip",
+    "suspend_license",
+    "terminate_license"
+  ]
+}
+
