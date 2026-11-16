@@ -23,3 +23,4 @@ Accept: application/json
 | `terminateAccount()` | `POST` | `/orders/:orderId/licenses/:licenseId/release` | Lisansı havuza iade etme / serbest bırakma |
 | `updateLicenseInfo()` | `POST` | `/orders/:orderId/licenses/:licenseId/info` | Lisans IP / Domain bilgisini güncelleme |
 | `clientArea()` | Blade | `views/clientArea.blade.php` | Lisans anahtarı ve tek tık kurulum kılavuzu |
+

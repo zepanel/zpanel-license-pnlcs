@@ -154,19 +154,25 @@ class ZPanelLicenseServer
         ];
     }
 
+    public function clientArea(array $params = []): array
+    {
+        return $this->renderClientArea($params);
+    }
+
     public function renderClientArea(array $params = []): array
     {
-        $licenseKey = $params['customfields']['license_key'] ?? $params['password'] ?? '';
-        $ip = $params['customfields']['server_ip'] ?? $params['domain'] ?? '';
+        $p = array_merge($this->params, $params);
+        $licenseKey = $p['customfields']['license_key'] ?? $p['license_key'] ?? $p['password'] ?? '';
+        $ip = $p['customfields']['server_ip'] ?? $p['server_ip'] ?? $p['domain'] ?? '';
 
         return [
             'view' => 'modules.servers.zpanel_license.views.clientArea',
             'data' => [
                 'license_key'  => $licenseKey,
                 'license_ip'   => $ip,
-                'package_name' => $params['package_name'] ?? 'zPanel Resmi Lisansı',
-                'status'       => $params['status'] ?? 'Active',
-                'service_id'   => $params['id'] ?? 0,
+                'package_name' => $p['package_name'] ?? 'zPanel Resmi Lisansı',
+                'status'       => $p['status'] ?? 'Active',
+                'service_id'   => $p['service_id'] ?? $p['id'] ?? 0,
                 'is_issued'    => !empty($licenseKey),
             ],
         ];
