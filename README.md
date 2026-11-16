@@ -1,4 +1,4 @@
-﻿# zPanel License Provisioning Module for PNLCS
+# zPanel License Provisioning Module for PNLCS
 
 Panelica PNLCS (Laravel 13) için zPanel Lisans provizyonlama eklentisi.
 
