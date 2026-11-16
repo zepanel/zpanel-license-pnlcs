@@ -1,7 +1,9 @@
 {{-- zPanel License PNLCS Blade View --}}
 {{-- Dokümantasyon: https://console.zepanel.com/partner/docs --}}
 
-<div class="zp-pnlcs-license" style="font-family: inherit;">
+<link rel="stylesheet" href="/modules/Servers/ZPanelLicense/assets/css/client.css">
+
+<div class="zp-pnlcs-license">
     <!-- Üst Başlık Kartı -->
     <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
         <div class="flex justify-between items-center flex-wrap gap-4">
